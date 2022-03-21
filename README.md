@@ -10,7 +10,7 @@ docker-compose up -d
 
 El cual al finalizar de hacer la construcción de las imagenes y los contenedores nos mostrara en consola el siguiente resultado
 
-![](img/1.PNG)
+![](/img/1.PNG)
 
 En consola podemos revisar que nuestras imagenes se hayan creado con el siguiente comando
 
@@ -20,7 +20,7 @@ docker images
 
 Que nos mostrara el siguiente resultado
 
-![](img/2.PNG)
+![](/img/2.PNG)
 
 
 Ahora vamos a mirar si los contenedores estan corriendo con el comando 
