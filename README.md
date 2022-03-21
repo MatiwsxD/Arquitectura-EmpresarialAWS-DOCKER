@@ -33,7 +33,7 @@ Y nos da como resultado:
 
 Ahora probamos entrar de manera local
 
-![](/img/4.PNG)
+![](/img/4.png)
 
 
 ## Despliegue en DockerHub 
@@ -84,7 +84,7 @@ docker push matiwsxd/roundrobin:mongodb
 
 Y verificamos que las imagenes esten subidas 
 
-![](/img/5.PNG)
+![](/img/5.png)
 
 ## Creacion Maquina en AWS
 Para poder desplegar en AWS se debe crear una maquina virtual EC2, para esto nos dirigimos a la consola de
@@ -93,31 +93,31 @@ AWS e iniciarla y una vez iniciada se nos pondra en verde el indicador.
 Le damos click en el indicador verde y nos enviara a la pagina donde podremos lanzar la maquina virtual
 EC2 y en donde podemos seleccionar cualquiera de las opciones que dice apta para la capa.
 
-![](/img/6.PNG)
+![](/img/6.png)
 
 Luego de eso nos va a mostrar un panel de EC2 donde veremos informacion general, como cuantas instancias tiene y los grupos de seguridad.
 
-![](/img/7.PNG)
+![](/img/7.png)
 
 Creamos una nueva instancia y seleccionamos cualquiera de las siguientes imagenes:
 
-![](/img/8.PNG)
+![](/img/8.png)
 
 Seleccionamos las caracteristicas aptas para la capa 
 
-![](/img/9.PNG)
+![](/img/9.png)
 
 Recibimos la siguiente notificacion 
 
-![](/img/10.PNG)
+![](/img/10.png)
 
 Nos conectamos mediante un cliente ssh a la maquina 
 
-![](/img/11.PNG)
+![](/img/11.png)
 
 En el panel de general de EC2 modificamos los grupos de seguridad quedando asi: 
 
-![](/img/12.PNG)
+![](/img/12.png)
 
 Instalamos Docker en la maquina 
    ```
@@ -160,4 +160,4 @@ docker run -d -p 35000:6000 --name roundrobin matiwsxd/roundrobin:mongo
 
 Revisamos que las imagenes esten en la maquina 
 
-![](/img/13.PNG)
+![](/img/13.png)
