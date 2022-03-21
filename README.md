@@ -20,7 +20,7 @@ docker images
 
 Que nos mostrara el siguiente resultado
 
-![](/img/2.PNG)
+![](/img/2.png)
 
 
 Ahora vamos a mirar si los contenedores estan corriendo con el comando 
@@ -29,7 +29,7 @@ Ahora vamos a mirar si los contenedores estan corriendo con el comando
 docker ps
 ```
 Y nos da como resultado:
-![](/img/3.PNG)
+![](/img/3.png)
 
 Ahora probamos entrar de manera local
 
