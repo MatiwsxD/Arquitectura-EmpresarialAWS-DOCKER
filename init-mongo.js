@@ -1,10 +1,10 @@
 db.createUser(
     {
-        user:"richard",
-        pwd:"Rsug3101",
+        user:"prueba",
+        pwd:"1234",
         roles:[{
-            role:"readWrite",
-            db:"RoundRobinLogsService"
+            role:"atlasAdmin",
+            db:"Cluster0"
         }]
     }
 )

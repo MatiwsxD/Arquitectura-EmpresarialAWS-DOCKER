@@ -6,9 +6,9 @@ services:
         image: mongo:latest
         container_name: dbRR 
         environment:
-            MONGO_INITDB_DATABASE: RoundRobinLogsServer 
-            MONGO_INITDB_ROOT_USERNAME: richard 
-            MONGO_INITDB_ROOT_PASSWORD: Rsug3101 
+            MONGO_INITDB_DATABASE: Cluster0
+            MONGO_INITDB_ROOT_USERNAME: prueba
+            MONGO_INITDB_ROOT_PASSWORD: 1234
         volumes:
             - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
             - mongodb:/data/db
@@ -24,7 +24,7 @@ services:
         depends_on:
             - logservice1
             - logservice2
-            - logservice3 
+            - logservice3
         container_name: roundrobin 
         ports:
             - "35000:6000"
@@ -35,7 +35,7 @@ services:
             dockerfile: Dockerfile
         depends_on:
             - db 
-        container_name: logservice1 
+        container_name: logservice1
         ports:
             - "35001:6000"
 
